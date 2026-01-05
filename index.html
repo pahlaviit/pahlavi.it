@@ -44,7 +44,14 @@
             border-bottom: 1px solid #1a1a1a;
         }
 
-        .logo { font-size: 1.1rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+        .nav-left { display: flex; align-items: center; gap: 15px; }
+        .logo { font-size: 1.1rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); text-decoration: none; }
+        
+        /* Language Switcher */
+        .lang-switch { display: flex; gap: 15px; font-size: 0.85rem; font-weight: 700; }
+        .lang-switch a { color: var(--dim); text-decoration: none; transition: 0.3s; text-transform: uppercase; }
+        .lang-switch a:hover { color: #fff; }
+        .lang-switch a.active { color: var(--accent); }
 
         /* Hero */
         section { padding: 12vh 0; border-bottom: 1px solid #1a1a1a; }
@@ -87,6 +94,7 @@
 
         /* Utilities */
         .outline { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.5); }
+        .accent { color: var(--accent); }
         [data-reveal] { opacity: 0; transform: translateY(30px); transition: var(--transition); }
         [data-reveal].visible { opacity: 1; transform: translateY(0); }
 
@@ -99,13 +107,19 @@
 <body>
 
     <nav class="container">
-        <div class="logo">PAHLAVI.IT</div>
-        <div style="font-weight: 700; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.6;">IRAN 2026</div>
+        <div class="nav-left">
+            <a href="/" class="logo">PAHLAVI.IT</a>
+            <div style="font-weight: 700; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.6; color: #fff;">IRAN 2026</div>
+        </div>
+        <div class="lang-switch">
+            <a href="/" class="active">IT</a>
+            <a href="/en/">EN</a>
+            <a href="/fa/">FA</a>
+        </div>
     </nav>
 
     <main class="container">
         
-        <!-- HERO -->
         <section class="hero">
             <h1 data-reveal>IRAN <span class="outline">2026</span></h1>
             <div class="sub-hero" data-reveal>La fine della dittatura.<br>Il ritorno della sovranità al popolo.</div>
@@ -115,7 +129,6 @@
             </p>
         </section>
 
-        <!-- LEADERSHIP -->
         <section>
             <div class="highlight-box" data-reveal>
                 <p><b>Reza Pahlavi</b> rappresenta una leadership democratica e nazionale: unità senza ideologia, Stato senza religione, potere fondato sul consenso e sul diritto.</p>
@@ -125,7 +138,6 @@
             <p style="color: var(--accent); font-weight: 900; text-transform: uppercase; letter-spacing: 1px;" data-reveal>Stare con l’Iran significa stare dalla parte giusta della storia.</p>
         </section>
 
-        <!-- PERCHÉ L'IRAN RIGUARDA L'ITALIA -->
         <section id="perche">
             <p class="section-intro" data-reveal>Interessi Strategici</p>
             <h2 data-reveal>Perché l’Iran riguarda <br>l’Italia e l’Europa</h2>
@@ -158,32 +170,30 @@
             </div>
         </section>
 
-        <!-- IRREFORMABILE -->
-     <section id="visione">
-    <p class="section-intro" data-reveal>Il Progetto per il Domani</p>
-    <h2 data-reveal>UNA VISIONE <br><span class="outline">OLTRE IL REGIME</span></h2>
-    
-    <div class="list-grid" data-reveal>
-        <div class="list-item">
-            <h3>Leadership Nazionale</h3>
-            <p>Reza Pahlavi agisce come unificante delle forze democratiche, ponendo l'interesse dell'Iran al di sopra di ogni ideologia di parte.</p>
-        </div>
-        <div class="list-item">
-            <h3>Integrità e Diritto</h3>
-            <p>Il passaggio a un sistema dove la corruzione è sradicata attraverso la trasparenza e lo stato di diritto garantito.</p>
-        </div>
-        <div class="list-item">
-            <h3>Unità del Popolo</h3>
-            <p>Un movimento laico e trasversale che unisce studenti, lavoratori e professionisti in un'unica identità nazionale.</p>
-        </div>
-    </div>
+        <section id="visione">
+            <p class="section-intro" data-reveal>Il Progetto per il Domani</p>
+            <h2 data-reveal>UNA VISIONE <br><span class="outline">OLTRE IL REGIME</span></h2>
+            
+            <div class="list-grid" data-reveal>
+                <div class="list-item">
+                    <h3>Leadership Nazionale</h3>
+                    <p>Reza Pahlavi agisce come unificante delle forze democratiche, ponendo l'interesse dell'Iran al di sopra di ogni ideologia di parte.</p>
+                </div>
+                <div class="list-item">
+                    <h3>Integrità e Diritto</h3>
+                    <p>Il passaggio a un sistema dove la corruzione è sradicata attraverso la trasparenza e lo stato di diritto garantito.</p>
+                </div>
+                <div class="list-item">
+                    <h3>Unità del Popolo</h3>
+                    <p>Un movimento laico e trasversale che unisce studenti, lavoratori e professionisti in un'unica identità nazionale.</p>
+                </div>
+            </div>
 
-    <div class="highlight-box" data-reveal>
-        <p><b>Il 2026 segna il ritorno della sovranità.</b> Non è solo la fine di un'era, ma l'inizio di una democrazia moderna fondata sul consenso popolare.</p>
-    </div>
-</section>
+            <div class="highlight-box" data-reveal>
+                <p><b>Il 2026 segna il ritorno della sovranità.</b> Non è solo la fine di un'era, ma l'inizio di una democrazia moderna fondata sul consenso popolare.</p>
+            </div>
+        </section>
 
-        <!-- COSA POSSONO FARE GLI ITALIANI -->
         <section>
             <h2 data-reveal>Cosa possono fare <br><span class="accent">gli italiani</span></h2>
             
@@ -206,7 +216,6 @@
             </div>
         </section>
 
-        <!-- CONCLUSIONE -->
         <section style="border-bottom: none; padding-bottom: 20vh;">
             <p class="section-intro" data-reveal>Dall'Italia</p>
             <h2 data-reveal>La libertà <br>non ha confini.</h2>
@@ -220,13 +229,11 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <!-- CONTATTI -->
                 <div>
                     <span class="footer-heading">Contatti e Media</span>
                     <a href="mailto:iran@pahlavi.it" class="email-small">iran@pahlavi.it</a>
                 </div>
 
-                <!-- LINK ISTITUZIONALI -->
                 <div>
                     <span class="footer-heading">Risorse Istituzionali</span>
                     <ul class="external-links">
