@@ -27,11 +27,11 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .container { padding: 0 6vw; max-width: 1600px; margin: 0 auto; }
+        .container { padding: 0 6vw; max-width: 1400px; margin: 0 auto; }
 
         /* Navigazione */
         nav {
-            height: 100px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -39,54 +39,60 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.9);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid #1a1a1a;
         }
 
-        .logo { font-size: 1.2rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+        .logo { font-size: 1.1rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
 
         /* Hero */
-        section { padding: 15vh 0; border-bottom: 1px solid #1a1a1a; }
-        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; text-align: left; }
-        .hero h1 { font-size: clamp(3.5rem, 15vw, 12rem); font-weight: 900; text-transform: uppercase; line-height: 0.85; margin-bottom: 1rem; }
-        .hero .sub-hero { font-size: clamp(1.5rem, 4vw, 3rem); font-weight: 700; color: var(--accent); margin-bottom: 2rem; }
-        .hero p { font-size: clamp(1.2rem, 2vw, 1.8rem); max-width: 900px; color: #ccc; line-height: 1.4; }
+        section { padding: 12vh 0; border-bottom: 1px solid #1a1a1a; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .hero h1 { font-size: clamp(3.5rem, 14vw, 11rem); font-weight: 900; text-transform: uppercase; line-height: 0.85; margin-bottom: 1.5rem; }
+        .hero .sub-hero { font-size: clamp(1.4rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--accent); margin-bottom: 2rem; }
+        .hero p { font-size: clamp(1.1rem, 1.8vw, 1.6rem); max-width: 850px; color: #ccc; line-height: 1.4; }
 
-        /* Typography */
-        h2 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 900; text-transform: uppercase; margin-bottom: 3rem; line-height: 1; }
-        .section-intro { font-size: clamp(1.1rem, 2vw, 1.6rem); color: var(--accent); font-weight: 700; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 1px; }
+        /* Tipografia e Layout */
+        h2 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 900; text-transform: uppercase; margin-bottom: 2.5rem; line-height: 1; }
+        .section-intro { font-size: 0.9rem; color: var(--accent); font-weight: 700; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
         
-        .content-block { margin-bottom: 6rem; }
-        .list-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; }
-        .list-item h3 { font-size: 1.4rem; font-weight: 900; margin-bottom: 1rem; color: #fff; text-transform: uppercase; }
-        .list-item p { font-size: 1.05rem; line-height: 1.6; color: var(--dim); }
+        .list-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3.5rem; margin-top: 3rem; }
+        .list-item h3 { font-size: 1.3rem; font-weight: 900; margin-bottom: 1rem; color: #fff; text-transform: uppercase; border-left: 3px solid var(--accent); padding-left: 15px; }
+        .list-item p { font-size: 1rem; line-height: 1.6; color: var(--dim); }
 
-        /* Highlight Boxes */
-        .highlight-box { background: #0a0a0a; border-left: 5px solid var(--accent); padding: 3rem; margin: 3rem 0; }
-        .highlight-box p { font-size: 1.3rem; line-height: 1.5; color: #fff; font-weight: 400; }
+        .highlight-box { background: #0a0a0a; border: 1px solid #222; padding: 2.5rem; margin: 3rem 0; }
+        .highlight-box p { font-size: 1.2rem; line-height: 1.5; color: #fff; }
 
-        /* Call to Action Groups */
-        .action-group { margin-top: 4rem; }
-        .action-group h4 { font-size: 1.2rem; text-transform: uppercase; color: var(--accent); margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem; }
-        .action-list { list-style: none; margin-bottom: 4rem; }
-        .action-list li { font-size: 1.1rem; padding: 1rem 0; border-bottom: 1px dotted #222; color: #ddd; }
-        .action-list li b { color: #fff; display: block; margin-bottom: 5px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        /* Azioni */
+        .action-group { margin-top: 3.5rem; }
+        .action-group h4 { font-size: 1.1rem; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
+        .action-list { list-style: none; margin-bottom: 3rem; }
+        .action-list li { font-size: 1rem; padding: 0.8rem 0; border-bottom: 1px solid #111; color: #bbb; }
+        .action-list li b { color: #fff; text-transform: uppercase; font-size: 0.85rem; margin-right: 10px; }
 
-        /* Footer */
-        footer { padding: 10vh 0; background: #000; border-top: 5px solid var(--accent); }
-        .contact-mail { font-size: clamp(1.5rem, 5vw, 6rem); font-weight: 900; color: #fff; text-decoration: none; transition: 0.3s; word-break: break-all; }
-        .contact-mail:hover { color: var(--accent); }
+        /* Footer & Link Sezione */
+        footer { padding: 8vh 0; background: #050505; border-top: 1px solid #222; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 4rem; }
+        
+        .footer-heading { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--dim); margin-bottom: 1.5rem; display: block; }
+        .email-small { font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; transition: 0.3s; }
+        .email-small:hover { color: var(--accent); }
+
+        .external-links { list-style: none; }
+        .external-links li { margin-bottom: 1.5rem; }
+        .external-links a { font-size: 0.9rem; font-weight: 700; color: #fff; text-decoration: none; text-transform: uppercase; display: block; line-height: 1.3; transition: 0.3s; }
+        .external-links a span { display: block; font-size: 0.7rem; color: var(--dim); font-weight: 400; margin-top: 4px; letter-spacing: 1px; }
+        .external-links a:hover { color: var(--accent); }
 
         /* Utilities */
-        .outline { color: transparent; -webkit-text-stroke: 1px var(--text); }
-        .dim-text { color: var(--dim); }
-        [data-reveal] { opacity: 0; transform: translateY(40px); transition: var(--transition); }
+        .outline { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.5); }
+        [data-reveal] { opacity: 0; transform: translateY(30px); transition: var(--transition); }
         [data-reveal].visible { opacity: 1; transform: translateY(0); }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 4rem; }
-            .highlight-box { padding: 1.5rem; }
+            .hero h1 { font-size: 3.8rem; }
+            section { padding: 8vh 0; }
         }
     </style>
 </head>
@@ -94,7 +100,7 @@
 
     <nav class="container">
         <div class="logo">PAHLAVI.IT</div>
-        <div style="font-weight: 700; font-size: 0.8rem; letter-spacing: 1px;">IRAN 2026</div>
+        <div style="font-weight: 700; font-size: 0.7rem; letter-spacing: 1px; opacity: 0.6;">IRAN 2026</div>
     </nav>
 
     <main class="container">
@@ -109,107 +115,103 @@
             </p>
         </section>
 
-        <!-- LEADERSHIP REZA PAHLAVI -->
+        <!-- LEADERSHIP -->
         <section>
             <div class="highlight-box" data-reveal>
                 <p><b>Reza Pahlavi</b> rappresenta una leadership democratica e nazionale: unità senza ideologia, Stato senza religione, potere fondato sul consenso e sul diritto.</p>
             </div>
-            <p class="section-intro" data-reveal>L'impegno dell'Europa</p>
+            <p class="section-intro" data-reveal>La posizione europea</p>
             <h2 data-reveal>L’Europa non può restare neutrale. <br>L’Italia non può restare in silenzio.</h2>
-            <h2 data-reveal style="color: var(--accent)">Stare con l’Iran significa stare dalla parte giusta della storia.</h2>
+            <p style="color: var(--accent); font-weight: 900; text-transform: uppercase; letter-spacing: 1px;" data-reveal>Stare con l’Iran significa stare dalla parte giusta della storia.</p>
+        </section>
 
         <!-- PERCHÉ L'IRAN RIGUARDA L'ITALIA -->
-        <section id="strategia">
-            <p class="section-intro" data-reveal>Geopolitica e Diritti</p>
-            <h2 data-reveal>Perché l’Iran riguarda l’Italia e l’Europa</h2>
-            <p class="sub-text dim-text" style="margin-bottom: 4rem; font-size: 1.2rem;">L’Iran non è una questione lontana o regionale. È un nodo strategico che incide direttamente sul futuro dell’Italia e dell’Europa.</p>
+        <section id="perche">
+            <p class="section-intro" data-reveal>Interessi Strategici</p>
+            <h2 data-reveal>Perché l’Iran riguarda <br>l’Italia e l’Europa</h2>
             
             <div class="list-grid" data-reveal>
                 <div class="list-item">
-                    <h3>Diritti umani universali</h3>
-                    <p>Le esecuzioni, la repressione sistematica e la censura non sono affari interni. L’Europa si fonda sulla difesa della dignità umana. Tacere significa indebolire i propri valori.</p>
+                    <h3>Diritti Umani</h3>
+                    <p>Le esecuzioni e la repressione non sono affari interni. Tacere significa indebolire i valori su cui si fonda l'Unione Europea.</p>
                 </div>
                 <div class="list-item">
-                    <h3>Sicurezza regionale</h3>
-                    <p>L’attuale regime alimenta conflitti, milizie e instabilità dal Medio Oriente al Mediterraneo. Un Iran democratico riduce le tensioni che ricadono anche sull’Europa.</p>
+                    <h3>Sicurezza</h3>
+                    <p>Un Iran democratico riduce le tensioni regionali che alimentano conflitti e instabilità fin dentro il Mediterraneo.</p>
                 </div>
                 <div class="list-item">
-                    <h3>Terrorismo</h3>
-                    <p>La Repubblica Islamica utilizza reti ideologiche e operative oltre i propri confini. Contrastare la dittatura significa ridurre le fonti di estremismo.</p>
-                </div>
-                <div class="list-item">
-                    <h3>Migrazioni forzate</h3>
-                    <p>Repressione e povertà spingono milioni di iraniani all’esilio. Le dittature generano flussi migratori incontrollati; le democrazie creano opportunità e ritorni.</p>
+                    <h3>Migrazioni</h3>
+                    <p>Le dittature generano flussi migratori incontrollati a causa della povertà e della repressione; le democrazie creano stabilità.</p>
                 </div>
                 <div class="list-item">
                     <h3>Energia</h3>
-                    <p>Un Iran libero e integrato può essere un partner energetico stabile, trasparente e prevedibile per l’Europa, riducendo dipendenze critiche.</p>
+                    <p>Un partner energetico trasparente e prevedibile ridurrebbe drasticamente le dipendenze critiche dell'Italia.</p>
                 </div>
                 <div class="list-item">
-                    <h3>Credibilità europea</h3>
-                    <p>L’Europa è osservata dai popoli oppressi. Sostenere l’Iran democratico significa dimostrare coerenza tra principi dichiarati e azioni reali.</p>
+                    <h3>Terrorismo</h3>
+                    <p>Contrastare la dittatura ideologica significa colpire direttamente le fonti internazionali di estremismo e radicalizzazione.</p>
+                </div>
+                <div class="list-item">
+                    <h3>Credibilità</h3>
+                    <p>Sostenere la democrazia iraniana dimostra coerenza tra i principi dichiarati dall'Europa e le sue azioni reali.</p>
                 </div>
             </div>
         </section>
 
         <!-- IRREFORMABILE -->
-        <section>
-            <h2 data-reveal>Una Repubblica Islamica <span class="outline">irreformabile</span></h2>
-            <p class="sub-text dim-text" style="margin-bottom: 3rem;">Dopo decenni di promesse mancate, la verità è evidente:</p>
-            <div class="list-grid" data-reveal>
-                <div class="list-item"><h3>Sistema Ideologico</h3><p>Il potere è concentrato, ideologico, violento. Il sistema non è riformabile.</p></div>
-                <div class="list-item"><h3>Corruzione</h3><p>La corruzione è strutturale e il dissenso è criminalizzato.</p></div>
-                <div class="list-item"><h3>Resistenza</h3><p>Le proteste di oggi sono nazionali, trasversali, laiche. Riguardano studenti, lavoratori, professionisti.</p></div>
-            </div>
-            <div class="highlight-box" data-reveal>
-                <p><b>Il 2026 è un punto di svolta storico.</b> Non una speranza astratta, ma la conseguenza di una crisi irreversibile.</p>
-            </div>
-        </section>
+     <section id="visione">
+    <p class="section-intro" data-reveal>Il Progetto per il Domani</p>
+    <h2 data-reveal>UNA VISIONE <br><span class="outline">OLTRE IL REGIME</span></h2>
+    
+    <div class="list-grid" data-reveal>
+        <div class="list-item">
+            <h3>Leadership Nazionale</h3>
+            <p>Reza Pahlavi agisce come unificante delle forze democratiche, ponendo l'interesse dell'Iran al di sopra di ogni ideologia di parte.</p>
+        </div>
+        <div class="list-item">
+            <h3>Integrità e Diritto</h3>
+            <p>Il passaggio a un sistema dove la corruzione è sradicata attraverso la trasparenza e lo stato di diritto garantito.</p>
+        </div>
+        <div class="list-item">
+            <h3>Unità del Popolo</h3>
+            <p>Un movimento laico e trasversale che unisce studenti, lavoratori e professionisti in un'unica identità nazionale.</p>
+        </div>
+    </div>
 
-        <!-- DETTAGLIO LEADERSHIP -->
-        <section>
-            <p class="section-intro" data-reveal>La Visione</p>
-            <h2 data-reveal>Reza Pahlavi: Leadership democratica</h2>
-            <div class="list-grid" data-reveal>
-                <div class="list-item"><b>Consenso</b><p>Legittimato da milioni di iraniani dentro e fuori dal paese.</p></div>
-                <div class="list-item"><b>Stato Laico</b><p>Separazione netta tra religione e potere politico.</p></div>
-                <div class="list-item"><b>Pluralismo</b><p>Tutela delle minoranze e delle libertà individuali.</p></div>
-                <div class="list-item"><b>Stato di Diritto</b><p>Fine dell’impunità e giustizia indipendente.</p></div>
-            </div>
-            <p class="details dim-text" style="margin-top: 3rem; line-height: 1.6;">
-                Reza Pahlavi rappresenta un punto di convergenza nazionale. Offre ciò che oggi manca all’opposizione: continuità storica senza autoritarismo, identità nazionale senza ideologia.
-            </p>
-        </section>
+    <div class="highlight-box" data-reveal>
+        <p><b>Il 2026 segna il ritorno della sovranità.</b> Non è solo la fine di un'era, ma l'inizio di una democrazia moderna fondata sul consenso popolare.</p>
+    </div>
+</section>
 
         <!-- COSA POSSONO FARE GLI ITALIANI -->
-        <section id="azione">
+        <section>
             <h2 data-reveal>Cosa possono fare <br><span class="accent">gli italiani</span></h2>
             
             <div class="action-group" data-reveal>
-                <h4>Come cittadini</h4>
+                <h4>Impegno Civile</h4>
                 <ul class="action-list">
-                    <li><b>Informazione critica</b> Seguire fonti affidabili, esperti e giornalisti indipendenti.</li>
-                    <li><b>Condivisione</b> Contrastare propaganda e disinformazione sui social media.</li>
-                    <li><b>Partecipazione</b> Presenziare a conferenze, dibattiti e manifestazioni pacifiche.</li>
+                    <li><b>Informarsi</b> Seguire fonti indipendenti e contrastare la propaganda sui social.</li>
+                    <li><b>Sostenere</b> Dare voce alla diaspora iraniana in Italia e partecipare a eventi culturali.</li>
+                    <li><b>Condividere</b> Rendere virale la realtà dei fatti per rompere il muro del relativismo.</li>
                 </ul>
             </div>
 
             <div class="action-group" data-reveal>
-                <h4>Alle Istituzioni</h4>
+                <h4>Richieste Istituzionali</h4>
                 <ul class="action-list">
-                    <li><b>Sanzioni Mirate</b> Contro funzionari e apparati responsabili di repressione.</li>
-                    <li><b>Stop Normalizzazione</b> Fine della diplomazia ordinaria con chi viola i diritti umani.</li>
-                    <li><b>Libertà Digitale</b> Sostegno concreto per l'accesso a internet in Iran.</li>
+                    <li><b>Sanzioni</b> Colpire i funzionari responsabili della repressione e delle esecuzioni.</li>
+                    <li><b>Diplomazia</b> Fine della normalizzazione con un regime che calpesta i diritti umani.</li>
+                    <li><b>Internet</b> Sostegno tecnico per garantire la libertà digitale ai cittadini iraniani.</li>
                 </ul>
             </div>
         </section>
 
         <!-- CONCLUSIONE -->
-        <section style="border-bottom: none;">
+        <section style="border-bottom: none; padding-bottom: 20vh;">
             <p class="section-intro" data-reveal>Dall'Italia</p>
-            <h2 data-reveal>Il ritorno della sovranità <br>al popolo.</h2>
-            <p class="details" data-reveal style="max-width: 800px; color: #888;">
-                Questo progetto nasce dall’Italia. Dalla libertà di parola di un iraniano in esilio. Per chi crede che la libertà non abbia confini.
+            <h2 data-reveal>La libertà <br>non ha confini.</h2>
+            <p data-reveal style="max-width: 700px; color: #666; font-size: 1.1rem; line-height: 1.6;">
+                Questo progetto nasce dalla libertà di parola difesa in Italia. Per chi crede che il 2026 sia l'anno in cui il popolo iraniano riconquisterà finalmente la propria sovranità.
             </p>
         </section>
 
@@ -217,9 +219,43 @@
 
     <footer>
         <div class="container">
-            <span class="contact-label dim-text" style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px;">Contatti / Media / Collaborazioni</span><br><br>
-            <a href="mailto:iran@pahlavi.it" class="contact-mail">iran@pahlavi.it</a>
-            <p style="margin-top: 5vh; font-size: 0.8rem; color: #444; font-weight: 700;">PAHLAVI.IT &copy; 2026</p>
+            <div class="footer-grid">
+                <!-- CONTATTI -->
+                <div>
+                    <span class="footer-heading">Contatti e Media</span>
+                    <a href="mailto:iran@pahlavi.it" class="email-small">iran@pahlavi.it</a>
+                </div>
+
+                <!-- LINK ISTITUZIONALI -->
+                <div>
+                    <span class="footer-heading">Risorse Istituzionali</span>
+                    <ul class="external-links">
+                        <li>
+                            <a href="https://rezapahlavi.org" target="_blank">
+                                REZAPAHLAVI.ORG
+                                <span>Sito ufficiale del Principe Ereditario dell’Iran</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://farahpahlavi.org" target="_blank">
+                                FARAHPAHLAVI.ORG
+                                <span>Sito ufficiale di S.M.I. l’Imperatrice</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://italia-iran.org" target="_blank">
+                                ITALIA-IRAN.ORG
+                                <span>Associazione per la Democrazia e la Libertà</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="padding-top: 4rem; border-top: 1px solid #111; display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 0.7rem; color: #444; font-weight: 700; letter-spacing: 1px;">PAHLAVI.IT — 2026</p>
+                <p style="font-size: 0.7rem; color: #444;">DALL'ITALIA PER UN IRAN LIBERO</p>
+            </div>
         </div>
     </footer>
 
